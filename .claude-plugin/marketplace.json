@@ -81,6 +81,17 @@
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management"
     },
     {
+      "name": "code-modernization",
+      "description": "Modernize legacy codebases (COBOL, legacy Java/C++, monolith web apps) with a structured assess / map / extract-rules / reimagine / transform / harden workflow and specialist review agents",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./plugins/code-modernization",
+      "category": "development",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization"
+    },
+    {
       "name": "code-review",
       "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring to filter false positives",
       "author": {
@@ -112,42 +123,6 @@
       "source": "./plugins/commit-commands",
       "category": "productivity",
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/commit-commands"
-    },
-    {
-      "name": "context7",
-      "description": "Upstash Context7 MCP server for up-to-date documentation lookup. Pull version-specific documentation and code examples directly from source repositories into your LLM context.",
-      "category": "development",
-      "source": "./external_plugins/context7",
-      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/context7",
-      "tags": ["community-managed"]
-    },
-    {
-      "name": "convex-backend",
-      "description": "Convex backend skill for building reactive, type-safe, production-grade backends. Helps Claude design schemas, server functions, auth, file storage, scheduled jobs, and real-time multiplayer features on Convex.",
-      "author": {
-        "name": "Convex"
-      },
-      "category": "development",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/get-convex/convex-backend-skill.git",
-        "sha": "9acbc5495dd26749a5e6341dc2438146c4caa03b"
-      },
-      "homepage": "https://convex.dev"
-    },
-    {
-      "name": "crowdstrike-falcon-foundry",
-      "description": "CrowdStrike Falcon Foundry development skills for building cybersecurity applications on the Falcon platform. Includes UI development, collections, functions, workflows, API integration, security patterns, and debugging workflows.",
-      "author": {
-        "name": "CrowdStrike"
-      },
-      "category": "security",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/CrowdStrike/foundry-skills.git",
-        "sha": "4b517aa5729d5bb5e397ff779f98eb05c91d1b21"
-      },
-      "homepage": "https://github.com/CrowdStrike/foundry-skills"
     },
     {
       "name": "csharp-lsp",
@@ -203,28 +178,6 @@
       "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design"
     },
     {
-      "name": "fullstory",
-      "description": "Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights.",
-      "author": {
-        "name": "Fullstory"
-      },
-      "category": "monitoring",
-      "source": {
-        "source": "github",
-        "repo": "fullstorydev/fullstory-skills",
-        "commit": "1ec5865e7ab1449f9a0859d164c4b6a8c53b6e2f",
-        "sha": "384555c3919a0631a096de1172998c8d855a0f26"
-      },
-      "homepage": "https://www.fullstory.com"
-    },
-    {
-      "name": "github",
-      "description": "Official GitHub MCP server for repository management. Create issues, manage pull requests, review code, search repositories, and interact with GitHub API.",
-      "category": "productivity",
-      "source": "./external_plugins/github",
-      "homepage": "https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github"
-    },
-    {
       "name": "gopls-lsp",
       "description": "Go language server for code intelligence and refactoring",
       "version": "1.0.0",
@@ -275,22 +228,6 @@
           "startupTimeout": 120000
         }
       }
-    },
-    {
-      "name": "jfrog",
-      "description": "Use the JFrog Platform from Claude Code: Artifactory repos and artifacts, security findings and exposures, Catalog package safety and downloads, workflows across the SDLC, and platform administration.",
-      "author": {
-        "name": "JFrog Ltd.",
-        "url": "https://jfrog.com"
-      },
-      "category": "security",
-      "source": {
-        "source": "github",
-        "repo": "jfrog/claude-plugin",
-        "commit": "259c8e718266c16e99b4f30ae9b1ed0f9f00d98d",
-        "sha": "2387bffa924a3cb8fd99f67b3bf09976d5f0c6b5"
-      },
-      "homepage": "https://jfrog.com"
     },
     {
       "name": "kotlin-lsp",
@@ -347,34 +284,6 @@
       }
     },
     {
-      "name": "lumen",
-      "description": "Precise local semantic code search via MCP. Indexes your codebase with Go AST parsing, embeds with Ollama or LM Studio, and exposes vector search to Claude through an MCP server — no cloud, no npm.",
-      "author": {
-        "name": "Ory Corp"
-      },
-      "category": "development",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/ory/lumen.git",
-        "sha": "d0dee0efcc8235bf514217ecb12cdac2ed5213fa"
-      },
-      "homepage": "https://www.ory.sh"
-    },
-    {
-      "name": "mapbox",
-      "description": "Mapbox skills and MCP servers for building location-aware applications with AI. Includes geospatial tools, style management, and patterns for web, iOS, Android, and AI agent frameworks.",
-      "author": {
-        "name": "Mapbox"
-      },
-      "category": "location",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/mapbox/mapbox-agent-skills.git",
-        "sha": "fc705cd9a4f823e10d5d4ee5adad4c6cd16de0a9"
-      },
-      "homepage": "https://www.mapbox.com"
-    },
-    {
       "name": "math-olympiad",
       "description": "Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing.",
       "author": {
@@ -413,6 +322,17 @@
       "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev"
     },
     {
+      "name": "mcp-tunnels",
+      "description": "Connect Claude to a private MCP server through an Anthropic MCP tunnel. The /create-docker-mcp-tunnel command drives the Docker Compose quickstart end to end: certificates, proxy config, cloudflared, and a verifiable sample server.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./plugins/mcp-tunnels",
+      "category": "development",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-tunnels"
+    },
+    {
       "name": "php-lsp",
       "description": "PHP language server (Intelephense) for code intelligence",
       "version": "1.0.0",
@@ -435,7 +355,7 @@
     },
     {
       "name": "playground",
-      "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button. Includes templates for design playgrounds, data explorers, concept maps, and document critique.",
+      "description": "Creates interactive HTML playgrounds \u2014 self-contained single-file explorers with visual controls, live preview, and prompt output with copy button. Includes templates for design playgrounds, data explorers, concept maps, and document critique.",
       "author": {
         "name": "Anthropic",
         "email": "support@anthropic.com"
@@ -542,20 +462,6 @@
       }
     },
     {
-      "name": "runway-api",
-      "description": "Video generation at scale. Generate videos, images, and audio with Runway's API — batch ad campaigns, product videos, multishot stories, and creative iteration. Supports seedance2, gen4.5, veo3, Nano, Banana Pro, and more.",
-      "author": {
-        "name": "Runway"
-      },
-      "category": "design",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/runwayml/skills.git",
-        "sha": "c5674fd2bfcf34c006fb8d9cadf912f21027e310"
-      },
-      "homepage": "https://runwayml.com"
-    },
-    {
       "name": "rust-analyzer-lsp",
       "description": "Rust language server for code intelligence and analysis",
       "version": "1.0.0",
@@ -596,6 +502,17 @@
         "sha": "c544c109e819a7fa3ec422605c224703af8e7f1c"
       },
       "homepage": "https://github.com/getsentry/sentry-for-claude/tree/main"
+    },
+    {
+      "name": "session-report",
+      "description": "Generate an explorable HTML report of Claude Code session usage \u2014 tokens, cache efficiency, subagents, skills, and the most expensive prompts \u2014 from local ~/.claude/projects transcripts.",
+      "author": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "source": "./plugins/session-report",
+      "category": "productivity",
+      "homepage": "https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report"
     },
     {
       "name": "skill-creator",
